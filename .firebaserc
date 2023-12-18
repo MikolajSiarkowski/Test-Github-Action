@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "test-github-action-53099",
+    "test": "test-github-action-53099"
+  },
+  "targets": {},
+  "etags": {}
+}
