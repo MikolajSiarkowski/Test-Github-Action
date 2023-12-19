@@ -9,6 +9,7 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
+      - run: firebase login
       - uses: actions/checkout@v2
       # Add any build steps here. For example:
       # - run: npm ci && npm run build
