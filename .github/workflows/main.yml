@@ -10,5 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to Firebase
-        run: firebase deploy
+        uses: /firebase-action@master
+        with:
+          args: deploy --only hosting
+        env:
+          FIREBASE_TOKES: ${{ secrets.FIREBASE_TOKEN }}
     
